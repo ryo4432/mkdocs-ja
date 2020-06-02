@@ -1,7 +1,7 @@
 # sample for mkdocs
 
-mkdocsが便利そうだったので使い方をまとめます。楽に使えるようにDockerコンテナを作製・配布します。
+mkdocs sample repository
 
-サイト：https://ryo4432.github.io/mkdocs-ja/  
-コンテナ：https://hub.docker.com/r/ryo4432/mkdocs
+site(in japanese):https://ryo4432.github.io/mkdocs-ja/  
+container:https://hub.docker.com/r/ryo4432/mkdocs
 
