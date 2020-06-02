@@ -1,40 +1,51 @@
 
 # 使い方
 
-## mkdocs serve
+## ローカルホストで確認
 
-`127.0.0.1:8000`に静的サイトを立ち上げてくれます。
-
-=== "CMD"
-    ```cmd
-    docker run --rm -it -p 8000:8000 "%cd%":/docs ryo4432/mkdocs:latest
-    ```
-=== "PowerShell"
-    ```powershell
-    docker run --rm -it -p 8000:8000 ${PWD}:/docs ryo4432/mkdocs:latest
-    ```
-=== "bash"
-    ```bash
-    docker run --rm -it -p 8000:8000 $(pwd):/docs ryo4432/mkdocs:latest
-    ```
-
-
-## mkdocs build
-
-`site`フォルダ以下にhtmlファイルを生成してくれます。
+以下のdockerコマンドで`127.0.0.1:8000`に静的サイトを立ち上げてくれます。  
 
 === "CMD"
     ```cmd
-    docker run --rm -it -p 8000:8000 "%cd%":/docs ryo4432/mkdocs:latest build
+    docker run --rm -it -p 8000:8000 -v "%cd%":/docs ryo4432/mkdocs:latest
     ```
 === "PowerShell"
     ```powershell
-    docker run --rm -it -p 8000:8000 ${PWD}:/docs ryo4432/mkdocs:latest build
+    docker run --rm -it -p 8000:8000 -v ${PWD}:/docs ryo4432/mkdocs:latest
     ```
 === "bash"
     ```bash
-    docker run --rm -it -p 8000:8000 $(pwd):/docs ryo4432/mkdocs:latest build
+    docker run --rm -it -p 8000:8000 -v $(pwd):/docs ryo4432/mkdocs:latest
     ```
+
+mkdocsの内部的には以下を実行しています(Dockerでは0.0.0.0にアップしようとしている。)
+
+```bash
+$ mkdocs serve
+```
+
+## html生成
+
+次のdockerコマンドで`site`フォルダ以下にhtmlファイルを生成してくれます。 
+
+=== "CMD"
+    ```cmd
+    docker run --rm -it -v "%cd%":/docs ryo4432/mkdocs:latest build
+    ```
+=== "PowerShell"
+    ```powershell
+    docker run --rm -it -v ${PWD}:/docs ryo4432/mkdocs:latest build
+    ```
+=== "bash"
+    ```bash
+    docker run --rm -it -v $(pwd):/docs ryo4432/mkdocs:latest build
+    ```
+ 
+mkdocsの内部的には以下のコマンドを実行します。
+
+```bash
+$ mkdocs build
+```
 
 ## フォルダ構成
 
@@ -49,4 +60,4 @@
 │&emsp;&emsp;└── pics  
 │&emsp;&emsp;&emsp;&emsp;&emsp;├── pic01.png  
 │&emsp;&emsp;&emsp;&emsp;&emsp;└── pic02.png  
-├── mkdocs.yml  
+└── mkdocs.yml  

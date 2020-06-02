@@ -1,15 +1,21 @@
 site_name: Sample-Mkdocs
 # site_url: 
-site_description: sample for mkdocs 
+site_description: sample for mkdocs(japanese)
 site_author: ryo4432
 
-repo_url: https://github.com/ryo4432/sample-mkdocs/
+repo_name: ryo4432/mkdocs-ja
+repo_url: https://github.com/ryo4432/mkdocs-ja
 edit_uri: ""
 
 theme:
     name: material
+    palette:
+        scheme: default
     feature:
-      tabs: true
+        tabs: true
+    icon:
+        logo: octicons/book
+        repo: fontawesome/brands/git-alt
     language: ja
     highlightjs: true
     hljs_languages:
@@ -52,8 +58,8 @@ markdown_extensions:
 #     - markdown.extensions.tables:
 #     - markdown.extensions.abbr:
 #     - markdown.extensions.md_in_html:
-    - mdx_math # 数式
-    - pymdownx.tasklist: # チェックボックス
+    - mdx_math # math
+    - pymdownx.tasklist: # checkbox
         custom_checkbox: true
     - plantuml_markdown: # plantuml
         server: http://www.plantuml.com/plantuml
