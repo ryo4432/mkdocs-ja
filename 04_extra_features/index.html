@@ -1,0 +1,802 @@
+
+
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="sample for mkdocs">
+      
+      
+      
+        <meta name="author" content="ryo4432">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
+    
+    
+      
+        <title>その他の機能 - Sample-Mkdocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.a2408e81.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjp.css">
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:600,800">
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/mermaid@8.0.0/dist/mermaid.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#その他の機能" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Sample-Mkdocs" class="md-header-nav__button md-logo" aria-label="Sample-Mkdocs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Sample-Mkdocs
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              その他の機能
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/ryo4432/mkdocs-ja" title="リポジトリへ" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Sample-Mkdocs" class="md-nav__button md-logo" aria-label="Sample-Mkdocs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Sample-Mkdocs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/ryo4432/mkdocs-ja" title="リポジトリへ" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../01_install/" title="インストール" class="md-nav__link">
+      インストール
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../02_howtouse/" title="使い方" class="md-nav__link">
+      使い方
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../03_basic_features/" title="基本的な機能" class="md-nav__link">
+      基本的な機能
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        その他の機能
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="その他の機能" class="md-nav__link md-nav__link--active">
+      その他の機能
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#文字の装飾いろいろ" class="md-nav__link">
+    文字の装飾いろいろ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#タブ" class="md-nav__link">
+    タブ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#チェックボックス" class="md-nav__link">
+    チェックボックス
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#スニペット" class="md-nav__link">
+    スニペット
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#詳細表示" class="md-nav__link">
+    詳細表示
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#数式サポート" class="md-nav__link">
+    数式サポート
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantuml" class="md-nav__link">
+    plantuml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphviz" class="md-nav__link">
+    graphviz
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#文字の装飾いろいろ" class="md-nav__link">
+    文字の装飾いろいろ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#タブ" class="md-nav__link">
+    タブ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#チェックボックス" class="md-nav__link">
+    チェックボックス
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#スニペット" class="md-nav__link">
+    スニペット
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#詳細表示" class="md-nav__link">
+    詳細表示
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#数式サポート" class="md-nav__link">
+    数式サポート
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantuml" class="md-nav__link">
+    plantuml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphviz" class="md-nav__link">
+    graphviz
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="その他の機能">その他の機能<a class="headerlink" href="#その他の機能" title="Permanent link">&para;</a></h1>
+<p>特に断りのない限り，以下の拡張パッケージによって自由度の高い表現を実現できるようになります。詳しくは<a href="https://facelessuser.github.io/pymdown-extensions/">こちら</a>に説明あり。</p>
+<p>ソース：<a href="https://github.com/facelessuser/pymdown-extensions">https://github.com/facelessuser/pymdown-extensions</a></p>
+<h2 id="文字の装飾いろいろ">文字の装飾いろいろ<a class="headerlink" href="#文字の装飾いろいろ" title="Permanent link">&para;</a></h2>
+<p><code>mkdocs.yml</code>に以下を追加すると以下の装飾ができます。</p>
+<ul>
+<li>取り消し線</li>
+<li>下線</li>
+<li>シンボル</li>
+<li>絵文字</li>
+<li>すべての文字に対するエスケープ</li>
+<li>強調表示</li>
+<li>ショートカットキー</li>
+<li>インラインハイライト</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">pymdownx.tilde</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">pymdownx.caret</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">pymdownx.betterem</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">pymdownx.smartsymbols</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">pymdownx.emoji</span><span class="p">:</span>
+        <span class="nt">emoji_index</span><span class="p">:</span> <span class="kt">!!python/name:materialx.emoji.twemoji</span>
+        <span class="nt">emoji_generator</span><span class="p">:</span> <span class="kt">!!python/name:materialx.emoji.to_svg</span>
+    <span class="p p-Indicator">-</span> <span class="nt">pymdownx.escapeall</span><span class="p">:</span>
+        <span class="nt">hardbreak</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+        <span class="nt">nbsp</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+    <span class="p p-Indicator">-</span> <span class="nt">pymdownx.mark</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">pymdownx.keys</span><span class="p">:</span>
+        <span class="nt">separator</span><span class="p">:</span> <span class="s">&quot;</span><span class="se">\uff0b</span><span class="s">&quot;</span>
+</code></pre></div>
+
+<table>
+<thead>
+<tr>
+<th>機能</th>
+<th>出力結果</th>
+<th>Markdown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>取り消し線</td>
+<td>あいうえお <del>かきくけこ</del></td>
+<td><code>あいうえお ~~かきくけこ~~</code></td>
+</tr>
+<tr>
+<td>下線</td>
+<td>さしすせそ <ins>たちつてと</ins></td>
+<td><code>さしすせそ ^^たちつてと^^</code></td>
+</tr>
+<tr>
+<td>斜体</td>
+<td>なにぬねの <em>はひふへほ</em></td>
+<td><code>なにぬねの *はひふへほ*</code></td>
+</tr>
+<tr>
+<td>シンボルマーク</td>
+<td>&trade; &copy; &reg; &#8453; &plusmn; &rarr; &larr; &harr; &ne; &frac14;. etc. 1<sup>st</sup> 2<sup>nd</sup> 3<sup>rd</sup></td>
+<td><code>(tm) (c) (r) c/o +/- --&gt; &lt;-- &lt;--&gt; =/= 1/4. etc. 1st 2nd 3rd</code></td>
+</tr>
+<tr>
+<td>絵文字</td>
+<td><img alt="😄" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f604.svg" title=":smile:" /> <img alt="❤" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title=":heart:" /> <img alt="👍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f44d.svg" title=":thumbsup:" /></td>
+<td><code>:smile: :heart: :thumbsup:</code></td>
+</tr>
+<tr>
+<td>文字のエスケープ</td>
+<td>We&nbsp;can&nbsp;escape everything!</td>
+<td><code>\W\e\ \c\a\n\ \e\s\c\a\p\e \e\v\e\r\y\t\h\i\n\g\!</code></td>
+</tr>
+<tr>
+<td>強調表示</td>
+<td><mark>強調表示</mark></td>
+<td><code>==強調表示==</code></td>
+</tr>
+<tr>
+<td>ショートカットキー</td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd><span>＋</span><kbd class="key-alt">Alt</kbd><span>＋</span><kbd class="key-delete">Del</kbd></span></td>
+<td><code>++ctrl+alt+delete++</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="タブ">タブ<a class="headerlink" href="#タブ" title="Permanent link">&para;</a></h2>
+<p><code>mkdocs.yml</code>に以下を追加すると文章中にタブを作れます。ただし，すべての機能がタブで実現できるようではないようです。pymdownに含まれていない拡張機能(plantumlなど)はダメなケースがあります。</p>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">pymdownx.tabbed</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">pymdownx.superfences</span><span class="p">:</span>
+        <span class="nt">preserve_tabs</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+
+<p><code>superfences</code>を入れておくと，タブの中でもフェンス内の記述を改行してくれます。(逆にこれがないと改行しない。)</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Fruit List</label><div class="tabbed-content">
+<ul>
+<li><img alt="🍎" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f34e.svg" title=":apple:" /> Apple</li>
+<li><img alt="🍌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f34c.svg" title=":banana:" /> Banana</li>
+<li><img alt="🥝" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f95d.svg" title=":kiwi:" /> Kiwi</li>
+</ul>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Fruit Table</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Fruit</th>
+<th>Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="🍎" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f34e.svg" title=":apple:" />  Apple</td>
+<td>Red</td>
+</tr>
+<tr>
+<td><img alt="🍌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f34c.svg" title=":banana:" /> Banana</td>
+<td>Yellow</td>
+</tr>
+<tr>
+<td><img alt="🥝" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f95d.svg" title=":kiwi:" />   Kiwi</td>
+<td>Green</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h2 id="チェックボックス">チェックボックス<a class="headerlink" href="#チェックボックス" title="Permanent link">&para;</a></h2>
+<p><code>mkdocs.yml</code>に以下を追加するとチェックボックスを表示できます。</p>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">pymdownx.tasklist</span><span class="p">:</span>
+        <span class="nt">custom_checkbox</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">出力結果</label><div class="tabbed-content">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> aaa</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> bbb</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ccc</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ddd<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> AAA</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> BBB</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> CCC</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> eee</li>
+</ul>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Markdown</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>* [x] aaa
+* [x] bbb
+* [x] ccc
+* [ ] ddd
+    * [x] AAA
+    * [ ] BBB
+    * [x] CCC
+* [ ] eee
+</code></pre></div>
+
+</div>
+</div>
+<h2 id="スニペット">スニペット<a class="headerlink" href="#スニペット" title="Permanent link">&para;</a></h2>
+<p><code>mkdocs.yml</code>に以下を追加すると，マークダウンの中にマークダウンを挿入できます。</p>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">pymdownx.snippets</span><span class="p">:</span>
+        <span class="nt">base_path</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">docs/</span>
+</code></pre></div>
+
+<p>使い方は以下の通り。</p>
+<pre><code>--8&lt;--
+filename.md
+filename2.md
+--8&lt;--</code></pre>
+
+<h2 id="詳細表示">詳細表示<a class="headerlink" href="#詳細表示" title="Permanent link">&para;</a></h2>
+<p><code>mkdocs.yml</code>に以下を追加すると，クリックで詳細を表示するような表現ができます。詳細表示は初めから開いた状態と閉じた状態を指定でき，入れ子で挿入することもできます。</p>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">pymdownx.details</span><span class="p">:</span>
+</code></pre></div>
+
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">出力結果</label><div class="tabbed-content">
+<details class="note" open="open"><summary>詳細を表示</summary><details class="danger"><summary>入れ子で詳細表示</summary><p>入れ子もできます。</p>
+</details>
+</details>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Markdown</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>???+ note &quot;詳細を表示&quot;
+    ??? danger &quot;入れ子で詳細表示&quot;
+        入れ子もできます。
+</code></pre></div>
+
+</div>
+</div>
+<h2 id="数式サポート">数式サポート<a class="headerlink" href="#数式サポート" title="Permanent link">&para;</a></h2>
+<p><code>mkdocs.yml</code>に以下を追加します。</p>
+<div class="highlight"><pre><span></span><code><span class="nt">extra_javascript</span><span class="p">:</span> 
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML</span>
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mdx_math</span>
+</code></pre></div>
+
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">出力結果</label><div class="tabbed-content">
+<p>
+<script type="math/tex; mode=display">
+\begin{align}
+    \dot{x} &= A x + B u \\
+    y &= C x
+\end{align}
+</script>
+</p>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Markdown</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>$$
+\begin{align}
+    \dot{x} &amp;= A x + B u \\
+    y &amp;= C x
+\end{align}
+$$
+</code></pre></div>
+
+</div>
+</div>
+<h2 id="plantuml">plantuml<a class="headerlink" href="#plantuml" title="Permanent link">&para;</a></h2>
+<p>plantumlも描画できます。描画にはplantuml描画用のサーバーを用意する必要があります。  serverにはローカルで建てたサーバーも設定できます。</p>
+<p>ソース：<a href="https://github.com/mikitex70/plantuml-markdown">https://github.com/mikitex70/plantuml-markdown</a></p>
+<p><code>mkdocs.yml</code>の記述は以下の通りです。</p>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">plantuml_markdown</span><span class="p">:</span>
+        <span class="nt">server</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http://www.plantuml.com/plantuml</span>
+</code></pre></div>
+
+<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U2NyaXB0VHlwZT0iYXBwbGljYXRpb24vZWNtYXNjcmlwdCIgY29udGVudFN0eWxlVHlwZT0idGV4dC9jc3MiIGhlaWdodD0iNDA1cHgiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHN0eWxlPSJ3aWR0aDo2MDBweDtoZWlnaHQ6NDA1cHg7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA2MDAgNDA1IiB3aWR0aD0iNjAwcHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzPjxmaWx0ZXIgaGVpZ2h0PSIzMDAlIiBpZD0iZnFmb2xuZXNmanF5IiB3aWR0aD0iMzAwJSIgeD0iLTEiIHk9Ii0xIj48ZmVHYXVzc2lhbkJsdXIgcmVzdWx0PSJibHVyT3V0IiBzdGREZXZpYXRpb249IjIuMCIvPjxmZUNvbG9yTWF0cml4IGluPSJibHVyT3V0IiByZXN1bHQ9ImJsdXJPdXQyIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgLjQgMCIvPjxmZU9mZnNldCBkeD0iNC4wIiBkeT0iNC4wIiBpbj0iYmx1ck91dDIiIHJlc3VsdD0iYmx1ck91dDMiLz48ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJibHVyT3V0MyIgbW9kZT0ibm9ybWFsIi8+PC9maWx0ZXI+PC9kZWZzPjxnPjxyZWN0IGZpbGw9IiNGRUZFQ0UiIGZpbHRlcj0idXJsKCNmcWZvbG5lc2ZqcXkpIiBoZWlnaHQ9IjM2LjI5NjkiIHJ4PSIxMi41IiByeT0iMTIuNSIgc3R5bGU9InN0cm9rZTogI0E4MDAzNjsgc3Ryb2tlLXdpZHRoOiAxLjU7IiB3aWR0aD0iNzEiIHg9IjEwIiB5PSIxODguODkwNiIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmdBbmRHbHlwaHMiIHRleHRMZW5ndGg9IjUxIiB4PSIyMCIgeT0iMjExLjg4NTciPkRlYmlhbjwvdGV4dD48cmVjdCBmaWxsPSIjRkVGRUNFIiBmaWx0ZXI9InVybCgjZnFmb2xuZXNmanF5KSIgaGVpZ2h0PSIzNi4yOTY5IiByeD0iMTIuNSIgcnk9IjEyLjUiIHN0eWxlPSJzdHJva2U6ICNBODAwMzY7IHN0cm9rZS13aWR0aDogMS41OyIgd2lkdGg9IjcxIiB4PSIxMzEiIHk9IjEwNC40NDUzIi8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZ0FuZEdseXBocyIgdGV4dExlbmd0aD0iNTEiIHg9IjE0MSIgeT0iMTI3LjQ0MDQiPlVidW50dTwvdGV4dD48cmVjdCBmaWxsPSIjRkVGRUNFIiBmaWx0ZXI9InVybCgjZnFmb2xuZXNmanF5KSIgaGVpZ2h0PSIzNi4yOTY5IiByeD0iMTIuNSIgcnk9IjEyLjUiIHN0eWxlPSJzdHJva2U6ICNBODAwMzY7IHN0cm9rZS13aWR0aDogMS41OyIgd2lkdGg9IjkzIiB4PSIyNTIiIHk9IjIwIi8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZ0FuZEdseXBocyIgdGV4dExlbmd0aD0iNzMiIHg9IjI2MiIgeT0iNDIuOTk1MSI+TGludXggTWludDwvdGV4dD48cGF0aCBkPSJNMjAyLDEyMi41OTM4IEwyMTIsMTIyLjU5MzggQzIyNywxMjIuNTkzOCAyMjcsMzguMTQ4NCAyNDIsMzguMTQ4NCBMMjUyLDM4LjE0ODQgIiBmaWxsPSJub25lIiBzdHlsZT0ic3Ryb2tlOiAjQTgwMDM2OyBzdHJva2Utd2lkdGg6IDEuMDsiLz48cmVjdCBmaWxsPSIjRkVGRUNFIiBmaWx0ZXI9InVybCgjZnFmb2xuZXNmanF5KSIgaGVpZ2h0PSIzNi4yOTY5IiByeD0iMTIuNSIgcnk9IjEyLjUiIHN0eWxlPSJzdHJva2U6ICNBODAwMzY7IHN0cm9rZS13aWR0aDogMS41OyIgd2lkdGg9IjgwIiB4PSIyNTIiIHk9Ijc2LjI5NjkiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nQW5kR2x5cGhzIiB0ZXh0TGVuZ3RoPSI2MCIgeD0iMjYyIiB5PSI5OS4yOTIiPkt1YnVudHU8L3RleHQ+PHBhdGggZD0iTTIwMiwxMjIuNTkzOCBMMjEyLDEyMi41OTM4IEMyMjcsMTIyLjU5MzggMjI3LDk0LjQ0NTMgMjQyLDk0LjQ0NTMgTDI1Miw5NC40NDUzICIgZmlsbD0ibm9uZSIgc3R5bGU9InN0cm9rZTogI0E4MDAzNjsgc3Ryb2tlLXdpZHRoOiAxLjA7Ii8+PHJlY3QgZmlsbD0iI0ZFRkVDRSIgZmlsdGVyPSJ1cmwoI2ZxZm9sbmVzZmpxeSkiIGhlaWdodD0iMzYuMjk2OSIgcng9IjEyLjUiIHJ5PSIxMi41IiBzdHlsZT0ic3Ryb2tlOiAjQTgwMDM2OyBzdHJva2Utd2lkdGg6IDEuNTsiIHdpZHRoPSI3OCIgeD0iMjUyIiB5PSIxMzIuNTkzOCIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmdBbmRHbHlwaHMiIHRleHRMZW5ndGg9IjU4IiB4PSIyNjIiIHk9IjE1NS41ODg5Ij5MdWJ1bnR1PC90ZXh0PjxwYXRoIGQ9Ik0yMDIsMTIyLjU5MzggTDIxMiwxMjIuNTkzOCBDMjI3LDEyMi41OTM4IDIyNywxNTAuNzQyMiAyNDIsMTUwLjc0MjIgTDI1MiwxNTAuNzQyMiAiIGZpbGw9Im5vbmUiIHN0eWxlPSJzdHJva2U6ICNBODAwMzY7IHN0cm9rZS13aWR0aDogMS4wOyIvPjxyZWN0IGZpbGw9IiNGRUZFQ0UiIGZpbHRlcj0idXJsKCNmcWZvbG5lc2ZqcXkpIiBoZWlnaHQ9IjM2LjI5NjkiIHJ4PSIxMi41IiByeT0iMTIuNSIgc3R5bGU9InN0cm9rZTogI0E4MDAzNjsgc3Ryb2tlLXdpZHRoOiAxLjU7IiB3aWR0aD0iOTEiIHg9IjI1MiIgeT0iMTg4Ljg5MDYiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nQW5kR2x5cGhzIiB0ZXh0TGVuZ3RoPSI3MSIgeD0iMjYyIiB5PSIyMTEuODg1NyI+S0RFIE5lb248L3RleHQ+PHBhdGggZD0iTTIwMiwxMjIuNTkzOCBMMjEyLDEyMi41OTM4IEMyMjcsMTIyLjU5MzggMjI3LDIwNy4wMzkxIDI0MiwyMDcuMDM5MSBMMjUyLDIwNy4wMzkxICIgZmlsbD0ibm9uZSIgc3R5bGU9InN0cm9rZTogI0E4MDAzNjsgc3Ryb2tlLXdpZHRoOiAxLjA7Ii8+PHBhdGggZD0iTTgxLDIwNy4wMzkxIEw5MSwyMDcuMDM5MSBDMTA2LDIwNy4wMzkxIDEwNiwxMjIuNTkzOCAxMjEsMTIyLjU5MzggTDEzMSwxMjIuNTkzOCAiIGZpbGw9Im5vbmUiIHN0eWxlPSJzdHJva2U6ICNBODAwMzY7IHN0cm9rZS13aWR0aDogMS4wOyIvPjxyZWN0IGZpbGw9IiNGRUZFQ0UiIGZpbHRlcj0idXJsKCNmcWZvbG5lc2ZqcXkpIiBoZWlnaHQ9IjM2LjI5NjkiIHJ4PSIxMi41IiByeT0iMTIuNSIgc3R5bGU9InN0cm9rZTogI0E4MDAzNjsgc3Ryb2tlLXdpZHRoOiAxLjU7IiB3aWR0aD0iNjAiIHg9IjEzMSIgeT0iMTYwLjc0MjIiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nQW5kR2x5cGhzIiB0ZXh0TGVuZ3RoPSI0MCIgeD0iMTQxIiB5PSIxODMuNzM3MyI+TE1ERTwvdGV4dD48cGF0aCBkPSJNODEsMjA3LjAzOTEgTDkxLDIwNy4wMzkxIEMxMDYsMjA3LjAzOTEgMTA2LDE3OC44OTA2IDEyMSwxNzguODkwNiBMMTMxLDE3OC44OTA2ICIgZmlsbD0ibm9uZSIgc3R5bGU9InN0cm9rZTogI0E4MDAzNjsgc3Ryb2tlLXdpZHRoOiAxLjA7Ii8+PHJlY3QgZmlsbD0iI0ZFRkVDRSIgZmlsdGVyPSJ1cmwoI2ZxZm9sbmVzZmpxeSkiIGhlaWdodD0iMzYuMjk2OSIgcng9IjEyLjUiIHJ5PSIxMi41IiBzdHlsZT0ic3Ryb2tlOiAjQTgwMDM2OyBzdHJva2Utd2lkdGg6IDEuNTsiIHdpZHRoPSI3OSIgeD0iMTMxIiB5PSIyMTcuMDM5MSIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmdBbmRHbHlwaHMiIHRleHRMZW5ndGg9IjU5IiB4PSIxNDEiIHk9IjI0MC4wMzQyIj5Tb2x5ZFhLPC90ZXh0PjxwYXRoIGQ9Ik04MSwyMDcuMDM5MSBMOTEsMjA3LjAzOTEgQzEwNiwyMDcuMDM5MSAxMDYsMjM1LjE4NzUgMTIxLDIzNS4xODc1IEwxMzEsMjM1LjE4NzUgIiBmaWxsPSJub25lIiBzdHlsZT0ic3Ryb2tlOiAjQTgwMDM2OyBzdHJva2Utd2lkdGg6IDEuMDsiLz48cmVjdCBmaWxsPSIjRkVGRUNFIiBmaWx0ZXI9InVybCgjZnFmb2xuZXNmanF5KSIgaGVpZ2h0PSIzNi4yOTY5IiByeD0iMTIuNSIgcnk9IjEyLjUiIHN0eWxlPSJzdHJva2U6ICNBODAwMzY7IHN0cm9rZS13aWR0aDogMS41OyIgd2lkdGg9Ijg3IiB4PSIxMzEiIHk9IjI3My4zMzU5Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZ0FuZEdseXBocyIgdGV4dExlbmd0aD0iNjciIHg9IjE0MSIgeT0iMjk2LjMzMTEiPlN0ZWFtT1M8L3RleHQ+PHBhdGggZD0iTTgxLDIwNy4wMzkxIEw5MSwyMDcuMDM5MSBDMTA2LDIwNy4wMzkxIDEwNiwyOTEuNDg0NCAxMjEsMjkxLjQ4NDQgTDEzMSwyOTEuNDg0NCAiIGZpbGw9Im5vbmUiIHN0eWxlPSJzdHJva2U6ICNBODAwMzY7IHN0cm9rZS13aWR0aDogMS4wOyIvPjxyZWN0IGZpbGw9IiNGRUZFQ0UiIGZpbHRlcj0idXJsKCNmcWZvbG5lc2ZqcXkpIiBoZWlnaHQ9IjM2LjI5NjkiIHJ4PSIxMi41IiByeT0iMTIuNSIgc3R5bGU9InN0cm9rZTogI0E4MDAzNjsgc3Ryb2tlLXdpZHRoOiAxLjU7IiB3aWR0aD0iMjQ3IiB4PSIxMzEiIHk9IjMyOS42MzI4Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZ0FuZEdseXBocyIgdGV4dExlbmd0aD0iMjI3IiB4PSIxNDEiIHk9IjM1Mi42Mjc5Ij5SYXNwYmlhbiB3aXRoIGEgdmVyeSBsb25nIG5hbWU8L3RleHQ+PHJlY3QgZmlsbD0iI0ZFRkVDRSIgZmlsdGVyPSJ1cmwoI2ZxZm9sbmVzZmpxeSkiIGhlaWdodD0iMzYuMjk2OSIgcng9IjEyLjUiIHJ5PSIxMi41IiBzdHlsZT0ic3Ryb2tlOiAjQTgwMDM2OyBzdHJva2Utd2lkdGg6IDEuNTsiIHdpZHRoPSIxNTkiIHg9IjQyOCIgeT0iMzAxLjQ4NDQiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nQW5kR2x5cGhzIiB0ZXh0LWRlY29yYXRpb249ImxpbmUtdGhyb3VnaCIgdGV4dExlbmd0aD0iNjciIHg9IjQzOCIgeT0iMzI0LjQ3OTUiPlJhc3BtYmM8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZ0FuZEdseXBocyIgdGV4dExlbmd0aD0iNjgiIHg9IjUwOSIgeT0iMzI0LjQ3OTUiPj0mZ3Q7IE9TTUM8L3RleHQ+PHBhdGggZD0iTTM3OCwzNDcuNzgxMyBMMzg4LDM0Ny43ODEzIEM0MDMsMzQ3Ljc4MTMgNDAzLDMxOS42MzI4IDQxOCwzMTkuNjMyOCBMNDI4LDMxOS42MzI4ICIgZmlsbD0ibm9uZSIgc3R5bGU9InN0cm9rZTogI0E4MDAzNjsgc3Ryb2tlLXdpZHRoOiAxLjA7Ii8+PHJlY3QgZmlsbD0iI0ZFRkVDRSIgZmlsdGVyPSJ1cmwoI2ZxZm9sbmVzZmpxeSkiIGhlaWdodD0iMzYuMjk2OSIgcng9IjEyLjUiIHJ5PSIxMi41IiBzdHlsZT0ic3Ryb2tlOiAjQTgwMDM2OyBzdHJva2Utd2lkdGg6IDEuNTsiIHdpZHRoPSIxNjEiIHg9IjQyOCIgeT0iMzU3Ljc4MTMiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nQW5kR2x5cGhzIiB0ZXh0LWRlY29yYXRpb249ImxpbmUtdGhyb3VnaCIgdGV4dExlbmd0aD0iNTMiIHg9IjQzOCIgeT0iMzgwLjc3NjQiPlJhc3B5Zmk8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZ0FuZEdseXBocyIgdGV4dExlbmd0aD0iODQiIHg9IjQ5NSIgeT0iMzgwLjc3NjQiPj0mZ3Q7IFZvbHVtaW88L3RleHQ+PHBhdGggZD0iTTM3OCwzNDcuNzgxMyBMMzg4LDM0Ny43ODEzIEM0MDMsMzQ3Ljc4MTMgNDAzLDM3NS45Mjk3IDQxOCwzNzUuOTI5NyBMNDI4LDM3NS45Mjk3ICIgZmlsbD0ibm9uZSIgc3R5bGU9InN0cm9rZTogI0E4MDAzNjsgc3Ryb2tlLXdpZHRoOiAxLjA7Ii8+PHBhdGggZD0iTTgxLDIwNy4wMzkxIEw5MSwyMDcuMDM5MSBDMTA2LDIwNy4wMzkxIDEwNiwzNDcuNzgxMyAxMjEsMzQ3Ljc4MTMgTDEzMSwzNDcuNzgxMyAiIGZpbGw9Im5vbmUiIHN0eWxlPSJzdHJva2U6ICNBODAwMzY7IHN0cm9rZS13aWR0aDogMS4wOyIvPjwhLS1NRDU9Wzc3Yjk2N2E4YmQ5NTJhZTcxZDUzYzdmOWM0NjE0YWM5XQpAc3RhcnRtaW5kbWFwDQoqIERlYmlhbg0KKiogVWJ1bnR1DQoqKiogTGludXggTWludA0KKioqIEt1YnVudHUNCioqKiBMdWJ1bnR1DQoqKiogS0RFIE5lb24NCioqIExNREUNCioqIFNvbHlkWEsNCioqIFN0ZWFtT1MNCioqIFJhc3BiaWFuIHdpdGggYSB2ZXJ5IGxvbmcgbmFtZQ0KKioqIDxzPlJhc3BtYmM8L3M+ID0+IE9TTUMNCioqKiA8cz5SYXNweWZpPC9zPiA9PiBWb2x1bWlvDQpAZW5kbWluZG1hcA0KClBsYW50VU1MIHZlcnNpb24gMS4yMDIwLjExKFNhdCBNYXkgMzAgMTA6MTM6NDMgVVRDIDIwMjApCihHUEwgc291cmNlIGRpc3RyaWJ1dGlvbikKSmF2YSBSdW50aW1lOiBKYXZhKFRNKSBTRSBSdW50aW1lIEVudmlyb25tZW50CkpWTTogSmF2YSBIb3RTcG90KFRNKSA2NC1CaXQgU2VydmVyIFZNCkRlZmF1bHQgRW5jb2Rpbmc6IFVURi04Ckxhbmd1YWdlOiBlbgpDb3VudHJ5OiBVUwotLT48L2c+PC9zdmc+" class="uml myDiagram" alt="My super diagram placeholder" title="" /></p>
+<div class="highlight"><pre><span></span><code>::uml:: format=&quot;svg&quot; classes=&quot;uml myDiagram&quot; alt=&quot;My super diagram placeholder&quot; 
+<span class="ni">@startmindmap</span>
+<span class="ge">* Debian</span>
+<span class="ge">*</span>* Ubuntu
+*** Linux Mint
+*** Kubuntu
+*** Lubuntu
+*** KDE Neon
+** LMDE
+** SolydXK
+** SteamOS
+** Raspbian with a very long name
+*** &lt;s&gt;Raspmbc&lt;/s&gt; =&gt; OSMC
+*** &lt;s&gt;Raspyfi&lt;/s&gt; =&gt; Volumio
+<span class="ni">@endmindmap</span>
+::end-uml::
+</code></pre></div>
+
+<h2 id="graphviz">graphviz<a class="headerlink" href="#graphviz" title="Permanent link">&para;</a></h2>
+<p>graphvizもいけます。dotファイルは別書きしたいところですが，そこまではまだ調べ切れてません。</p>
+<p>ソース：<a href="https://github.com/cesaremorel/markdown-inline-graphviz">https://github.com/cesaremorel/markdown-inline-graphviz</a></p>
+<p><code>mkdocs.yml</code>の記述は以下の通り。</p>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">markdown_inline_graphviz</span>
+</code></pre></div>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.42.3 ()
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="169pt" height="52pt"
+ viewBox="0.00 0.00 168.99 52.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 48)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-48 164.99,-48 164.99,4 -4,4"/>
+<!-- Earth -->
+<g id="node1" class="node">
+<title>Earth</title>
+<ellipse fill="none" stroke="black" cx="33.9" cy="-22" rx="29.81" ry="18"/>
+<ellipse fill="none" stroke="black" cx="33.9" cy="-22" rx="33.8" ry="22"/>
+<text text-anchor="middle" x="33.9" y="-18.3" font-family="Times,serif" font-size="14.00">Earth</text>
+</g>
+<!-- Mars -->
+<g id="node2" class="node">
+<title>Mars</title>
+<ellipse fill="none" stroke="black" cx="132.39" cy="-22" rx="28.7" ry="18"/>
+<text text-anchor="middle" x="132.39" y="-18.3" font-family="Times,serif" font-size="14.00">Mars</text>
+</g>
+<!-- Earth&#45;&gt;Mars -->
+<g id="edge1" class="edge">
+<title>Earth&#45;&gt;Mars</title>
+<path fill="none" stroke="black" d="M67.84,-22C76.14,-22 85.12,-22 93.65,-22"/>
+<polygon fill="black" stroke="black" points="93.74,-25.5 103.74,-22 93.74,-18.5 93.74,-25.5"/>
+</g>
+</g>
+</svg>
+
+<pre><code>```graphviz dot graph.svg
+digraph G {
+    rankdir=LR
+    Earth [peripheries=2]
+    Mars
+    Earth -> Mars
+}</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../03_basic_features/" title="基本的な機能" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                基本的な機能
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 ryo4432
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.27c6a5e6.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+        <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
