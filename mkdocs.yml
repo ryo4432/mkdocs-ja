@@ -112,6 +112,8 @@ extra:
     social:
         - icon: fontawesome/brands/github
           link: https://github.com/ryo4432
+        - icon: fontawesome/brands/docker
+          link: https://hub.docker.com/u/ryo4432
 
 plugins:
     - search
