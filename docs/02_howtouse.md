@@ -53,15 +53,15 @@ github pagesへのデプロイを1コマンドでやってくれます。
 
 === "CMD"
     ```cmd
-    docker run --rm -v "%cd%":/docs ryo4432/mkdocs:latest gh-deploy
+    docker run --rm -it -v "%cd%":/docs ryo4432/mkdocs:latest gh-deploy
     ```
 === "PowerShell"
     ```powershell
-    docker run --rm -v ${PWD}:/docs ryo4432/mkdocs:latest gh-deploy
+    docker run --rm -it -v ${PWD}:/docs ryo4432/mkdocs:latest gh-deploy
     ```
 === "bash"
     ```bash
-    docker run --rm -v $(pwd):/docs ryo4432/mkdocs:latest gh-deploy
+    docker run --rm -it -v $(pwd):/docs ryo4432/mkdocs:latest gh-deploy
     ```
  
 mkdocsの内部的には以下のコマンドを実行します。
