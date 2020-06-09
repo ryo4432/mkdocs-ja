@@ -6,13 +6,18 @@ site_author: ryo4432
 repo_name: ryo4432/mkdocs-ja
 repo_url: https://github.com/ryo4432/mkdocs-ja
 edit_uri: ""
+use_directory_urls: false
+copyright: Copyright &copy; 2020 ryo4432
 
 theme:
     name: material
     palette:
         scheme: default
-    feature:
+        primary: blue-grey
+        accent: blue-grey
+    features:
         tabs: true
+        instant: true
     icon:
         logo: octicons/book
         repo: fontawesome/brands/git-alt
@@ -26,21 +31,12 @@ theme:
         code: 'Roboto Mono'
 
 nav:
-    - Home: index.md
-    - インストール: 01_install.md
-    - 使い方: 02_howtouse.md
-    - 基本的な機能: 03_basic_features.md
-    - その他の機能: 04_extra_features.md
-
-extra_css:
-    - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
-    - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
-    - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
-    - https://unpkg.com/mermaid@8.0.0/dist/mermaid.css
-
-extra_javascript: 
-    - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-    - https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js
+    - mkdocs:
+        - '概要': 'index.md'
+        - 'インストール': '01_install.md'
+        - '使い方': '02_howtouse.md'
+        - '基本的な機能': '03_basic_features.md'
+        - 'その他の機能': '04_extra_features.md'
 
 markdown_extensions:
     - toc:
@@ -53,18 +49,18 @@ markdown_extensions:
     - codehilite:
         linenums: true
     - def_list
-#     - markdown.extensions.attr_list:
-#     - markdown.extensions.def_list:
-#     - markdown.extensions.tables:
-#     - markdown.extensions.abbr:
-#     - markdown.extensions.md_in_html:
+    - markdown.extensions.attr_list:
+    - markdown.extensions.def_list:
+    - markdown.extensions.tables:
+    - markdown.extensions.abbr:
+    - markdown.extensions.md_in_html:
     - mdx_math # math
     - pymdownx.tasklist: # checkbox
         custom_checkbox: true
     - plantuml_markdown: # plantuml
         server: http://www.plantuml.com/plantuml
     - markdown_inline_graphviz # graphviz
-    # ここからpymdownx
+    # pymdownx is from here
     - pymdownx.emoji
     - pymdownx.tabbed
     - pymdownx.tilde
@@ -100,11 +96,30 @@ markdown_extensions:
         base_path: docs/
     - pymdownx.details:
 
-copyright: Copyright &copy; 2020 ryo4432
+extra_css:
+    - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+    - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+    - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    - https://unpkg.com/mermaid@8.0.0/dist/mermaid.css
+
+extra_javascript: 
+    - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    - https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js
 
 extra:
     search:
       language: 'jp'
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/ryo4432
 
 plugins:
     - search
+    - git-revision-date-localized
+    - minify:
+        minify_html: true
+    # - mkpdfs:
+    #     author: ryo4432
+    #     toc_title: Table of Contents # default value
+    #     toc_position: pre # default value
+    #     output_path: pdf/sample-mkdocs.pdf

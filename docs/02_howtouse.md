@@ -30,21 +30,44 @@ $ mkdocs serve
 
 === "CMD"
     ```cmd
-    docker run --rm -it -v "%cd%":/docs ryo4432/mkdocs:latest build
+    docker run --rm -v "%cd%":/docs ryo4432/mkdocs:latest build
     ```
 === "PowerShell"
     ```powershell
-    docker run --rm -it -v ${PWD}:/docs ryo4432/mkdocs:latest build
+    docker run --rm -v ${PWD}:/docs ryo4432/mkdocs:latest build
     ```
 === "bash"
     ```bash
-    docker run --rm -it -v $(pwd):/docs ryo4432/mkdocs:latest build
+    docker run --rm -v $(pwd):/docs ryo4432/mkdocs:latest build
     ```
  
 mkdocsの内部的には以下のコマンドを実行します。
 
 ```bash
 $ mkdocs build
+```
+
+## デプロイ
+
+github pagesへのデプロイを1コマンドでやってくれます。
+
+=== "CMD"
+    ```cmd
+    docker run --rm -v "%cd%":/docs ryo4432/mkdocs:latest gh-deploy
+    ```
+=== "PowerShell"
+    ```powershell
+    docker run --rm -v ${PWD}:/docs ryo4432/mkdocs:latest gh-deploy
+    ```
+=== "bash"
+    ```bash
+    docker run --rm -v $(pwd):/docs ryo4432/mkdocs:latest gh-deploy
+    ```
+ 
+mkdocsの内部的には以下のコマンドを実行します。
+
+```bash
+$ mkdocs gh-deploy
 ```
 
 ## フォルダ構成
@@ -61,3 +84,8 @@ $ mkdocs build
 │&emsp;&emsp;&emsp;&emsp;&emsp;├── pic01.png  
 │&emsp;&emsp;&emsp;&emsp;&emsp;└── pic02.png  
 └── mkdocs.yml  
+
+## pdf生成
+
+[mkpdfs-mkdocs-plugin](https://github.com/comwes/mkpdfs-mkdocs-plugin)を使ってpdfを生成できます。  
+CSSスタイルがダメなのか，まだ完ぺきではないですが`mkdocs build`でPDFを生成できます。

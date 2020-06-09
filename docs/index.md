@@ -1,6 +1,4 @@
-# HOME
-
-## 概要
+# 概要
 
 mkdocsの使い方を自分用のメモとして残します。  
 mkdocsはマークダウンをhtmlの静的サイトにするためのツールです。既存のマークダウンをそのまま使えるのが利点です。  
@@ -22,3 +20,4 @@ mkdocsはマークダウンをhtmlの静的サイトにするためのツール�
 - https://facelessuser.github.io/pymdown-extensions/
 - https://github.com/mikitex70/plantuml-markdown
 - https://github.com/cesaremorel/markdown-inline-graphviz
+- https://github.com/comwes/mkpdfs-mkdocs-plugin
