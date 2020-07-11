@@ -37,6 +37,8 @@ nav:
         - '使い方': '02_howtouse.md'
         - '基本的な機能': '03_basic_features.md'
         - 'その他の機能': '04_extra_features.md'
+    - 非線形制御:
+        - 'GMRES法': 'ctrl_01_gmres_method.md'
 
 markdown_extensions:
     - toc:
